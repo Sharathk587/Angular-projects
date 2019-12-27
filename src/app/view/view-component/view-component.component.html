@@ -1,0 +1,26 @@
+<br><br>
+<input type="text" [(ngModel)]="userName">
+<button (click)="search()">Search</button>
+<br><br>
+<div class="container card card-sm" *ngIf="response">
+<table class="table">
+    <thead>
+        <th>Login Name</th>
+        <th>URL</th>
+        <th>Number of Response</th>
+        <th>Created Date</th>
+        <th>Followers</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{response.login}}</td>
+            <td>{{response.url}}</td>
+            <td>{{response.node_id}}</td>
+            <td>{{response.created_at}}</td>
+            <td>{{response.followers}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</div>
